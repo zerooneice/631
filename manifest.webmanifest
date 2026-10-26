@@ -1,0 +1,26 @@
+{
+  "id": "./index.html",
+  "name": "2027 上体大考研抽题",
+  "short_name": "考研抽题",
+  "description": "学校体育学、运动训练学、运动生理学三科抽背与笔记",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#edf3fc",
+  "theme_color": "#eaf1ff",
+  "icons": [
+    {
+      "src": "./icons/app-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/app-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
