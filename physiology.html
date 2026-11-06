@@ -179,5 +179,5 @@ const QUESTIONS=[{"id":"2","question":"生命活动的基本特征","kind":"重�
 </script>
 <script defer src="./media.js"></script>
 <script defer src="./app.js"></script>
-<script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>{}));}</script></body>
+<script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(reg=>{reg.update().catch(()=>{});document.addEventListener('visibilitychange',()=>{if(!document.hidden)reg.update().catch(()=>{});});}).catch(()=>{}));}</script></body>
 </html>
